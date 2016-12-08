@@ -106,12 +106,12 @@ for key in dic_snapshot:
     dic_snapshot[key] = round((dic_snapshot[key] / 1000.0 / 1000.0 / 1000.0), 2)
 
 for key in sorted(dic_sync_slice):
-    print("%s => %s%s" % (key, dic_sync_slice[key], " MB"))
+    print("%s => %s%s" % (key, dic_sync_slice[key], "MB"))
 
 for key in sorted(dic_oplog_slice):
-    print("%s => %s%s" % (key, dic_oplog_slice[key], " H"))
+    print("%s => %s%s" % (key, dic_oplog_slice[key], "H"))
 
 for key in sorted(dic_snapshot):
-    print("%s => %s%s" % (key, dic_snapshot[key], " GB"))
+    print("%s => %s%s" % (key, dic_snapshot[key], "GB"))
 
 f.close()
